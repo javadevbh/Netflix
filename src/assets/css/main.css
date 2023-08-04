@@ -1,3 +1,6 @@
 @import './tailwind.css';
 @import './icons.css';
 @import './base.css';
+@import './components/btn.css';
+@import "./components/global.css";
+

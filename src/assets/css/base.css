@@ -32,4 +32,8 @@
     @apply text-primary-gray hover:text-primary-red transition-colors duration-200;
   }
 
+  i {
+   @apply flex justify-center items-center text-[1.35rem];
+  }
+
 }

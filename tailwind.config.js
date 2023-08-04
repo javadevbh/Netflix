@@ -17,6 +17,9 @@ export default {
           gray : "#839bb1",
           lighter : "#fafbff"
         }
+      },
+      maxWidth : {
+        xxs : "18rem"
       }
     },
   },

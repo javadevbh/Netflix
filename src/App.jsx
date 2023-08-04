@@ -1,8 +1,12 @@
+import React from 'react'
+
+//Components
+import RightSidebar from "./components/RightSidebar"
 
 function App() {
   return (
     <>
-      <h1>Hello world!</h1>
+      <RightSidebar/>
     </>
   )
 }
