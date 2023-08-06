@@ -5,4 +5,7 @@
     .btn-gray {
         @apply bg-primary-gray text-white
     }
+    .btn-primary {
+        @apply bg-primary-red text-white
+    }
 }

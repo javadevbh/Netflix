@@ -8,4 +8,16 @@
     .active-link span {
         @apply text-slate-700
     }
+    .avatar {
+        @apply w-12 shadow-md rounded-full
+    }
+    .user-status {
+        @apply before:w-3 before:absolute before:rounded-full before:top-0 before:left-0 before:h-3 before:border-2 before:border-white;
+    }
+    .status-offline {
+        @apply before:bg-primary-gray;
+    }
+    .status-online {
+        @apply before:bg-green-600;
+    }
 }
