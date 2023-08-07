@@ -36,4 +36,8 @@
    @apply flex justify-center items-center text-[1.35rem];
   }
 
+  input , select , textarea {
+    @apply outline-none bg-transparent
+  }
+
 }
