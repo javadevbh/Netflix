@@ -20,4 +20,7 @@
     .status-online {
         @apply before:bg-green-600;
     }
+    .shadow-selected-md {
+        @apply shadow-md shadow-white/40;
+    }
 }

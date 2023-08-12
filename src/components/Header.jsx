@@ -5,7 +5,7 @@ import avatar from "../assets/images/avatar-12.jpg"
 
 const Header = () => {
   return (
-    <header className="p-content m-8 flex items-center justify-between">
+    <header className="px-content m-8 flex items-center justify-between">
       <div className="flex items-center grow">
         <div className="flex items-center space-x-4">
           <a href="#" className="text-slate-700 inline-block">
@@ -41,8 +41,8 @@ const Header = () => {
           <i className="fi fi-rr-bell"></i>
         </a>
         <div className="flex items-center mr-4">
-          <div className="w-14 border-2 rounded-full overflow-hidden  border-primary-red/80 p-[2px]">
-            <img className="rounded-full overflow-hidden" src={avatar} alt="profile" />
+          <div className="w-14 border-2 avatar  border-primary-red/80 p-[2px]">
+            <img className="avatar" src={avatar} alt="profile" />
           </div>
           <div className="flex flex-col items-start justify-center mr-4">
             <h6 className="mb-1 text-sm">.Rosita b</h6>
