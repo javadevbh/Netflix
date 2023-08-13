@@ -46,7 +46,6 @@ const Slider = () => {
   };
 
   return (
-    <div className="p-8 grid">
       <section className="w-full h-[30rem] overflow-hidden rounded-3xl relative">
         <img
           className="w-full h-full transition-all object-cover object-center"
@@ -86,7 +85,7 @@ const Slider = () => {
               <img
                 id="poster1"
                 onClick={slideHandler}
-                className={`w-28 h-16 rounded-xl cursor-pointer ${
+                className={`w-28 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster1" && "shadow-selected-md"
                 }`}
                 src={poster3}
@@ -95,7 +94,7 @@ const Slider = () => {
               <img
                 id="poster2"
                 onClick={slideHandler}
-                className={`w-28 h-16 rounded-xl cursor-pointer ${
+                className={`w-28 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster2" && "shadow-selected-md"
                 }`}
                 src={poster2}
@@ -104,7 +103,7 @@ const Slider = () => {
               <img
                 id="poster3"
                 onClick={slideHandler}
-                className={`w-28 h-16 rounded-xl cursor-pointer ${
+                className={`w-28 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster3" && "shadow-selected-md"
                 }`}
                 src={slider1}
@@ -114,7 +113,6 @@ const Slider = () => {
           </div>
         </div>
       </section>
-    </div>
   );
 };
 
