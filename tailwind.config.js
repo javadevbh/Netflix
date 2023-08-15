@@ -15,7 +15,8 @@ export default {
           light : "#eaedf6",
           red : "#c4252c",
           gray : "#839bb1",
-          lighter : "#fafbff"
+          lighter : "#fafbff",
+          bg : "#FAFBFF",
         }
       },
       maxWidth : {
