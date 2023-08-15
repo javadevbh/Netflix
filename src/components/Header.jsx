@@ -3,16 +3,24 @@ import React from "react";
 //Images
 import avatar from "../assets/images/avatar-12.jpg"
 
-const Header = () => {
+const Header = (props) => {
+
+  const clickHandler = () => {
+    props.func();
+  }
+
   return (
-    <header className="px-content m-8 flex items-center justify-between">
-      <div className="flex items-center grow">
-        <div className="flex items-center space-x-4">
+    <header id="header" className="px-content m-8 flex items-center justify-between">
+      <div className="flex items-center grow space-x-reverse space-x-4">
+          <button onClick={clickHandler} className="xlg:hidden">
+            <i className="fi fi-rr-symbol text-3xl"></i>
+          </button>
+        <div className="flex items-center space-x-reverse space-x-4">
           <a href="#" className="text-slate-700 inline-block">
             <i className="fi fi-rr-angle-right text-lg"></i>
           </a>
           <a href="#">
-            <i className="fi fi-rr-angle-left text-lg mr-4"></i>
+            <i className="fi fi-rr-angle-left text-lg"></i>
           </a>
         </div>
         <div className="border border-primary-gray rounded-full flex items-center w-96 px-4">

@@ -19,8 +19,17 @@ export default {
         }
       },
       maxWidth : {
-        xxs : "18rem"
+        "xxs" : "18rem",
+        "2xxs" : "15rem"
       }
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xlg': '1180px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
   },
   plugins: [],
