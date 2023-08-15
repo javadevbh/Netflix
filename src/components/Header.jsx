@@ -23,7 +23,7 @@ const Header = (props) => {
             <i className="fi fi-rr-angle-left text-lg"></i>
           </a>
         </div>
-        <div className="border border-primary-gray rounded-full flex items-center w-96 px-4">
+        <div className="border border-primary-gray rounded-full flex items-center w-10 h-10 sm:w-full sm:max-w-sm overflow-hidden px-3">
           <i className="fi fi-rr-search text-primary-gray text-base"></i>
           <input
             className="px-4 py-3 grow"

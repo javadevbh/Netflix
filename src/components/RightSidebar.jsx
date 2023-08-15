@@ -9,7 +9,7 @@ const RightSidebar = (props) => {
   return (
     <div
       id="rightSidebar"
-      className={`fixed z-50 ${props.status === true && "translate-x-0"} translate-x-full xlg:translate-x-0 transition-all duration-200 bg-white xlg:bg-transparent right-0 top-0 h-screen w-full xl:max-w-xxs max-w-xxs xlg:max-w-2xxs border-l-2 border-primary-light p-8 flex flex-col justify-between `}
+      className={`fixed z-50 ${props.status === true ? "translate-x-0" : "translate-x-full" }  xlg:translate-x-0 transition-all duration-200 bg-white xlg:bg-transparent right-0 top-0 h-screen w-full xl:max-w-xxs max-w-xxs xlg:max-w-2xxs border-l-2 border-primary-light p-8 flex flex-col justify-between `}
     >
       <div>
         <div className="flex items-start justify-between">

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 //Images
 import slider1 from "../assets/images/sliderbg.jpg";
 import poster3 from "../assets/images/poster3.jpg";
-import poster2 from "../assets/images/poster2.jpg";
+import poster4 from "../assets/images/poster4.jpg";
 import avatar1 from "../assets/images/avatar-1.jpg";
 import avatar2 from "../assets/images/avatar-2.jpg";
 import avatar3 from "../assets/images/avatar-3.jpg";
@@ -19,8 +19,8 @@ const Slider = () => {
       title: "چیز های عجیب",
     },
     slide3: {
-      src: poster2,
-      title: "کارآگاهان حقیقی",
+      src: poster4,
+      title: "میان ستاره ای",
     },
   };
 
@@ -48,14 +48,14 @@ const Slider = () => {
   return (
       <section className="w-full h-[30rem] overflow-hidden rounded-3xl relative">
         <img
-          className="w-full h-full transition-all object-cover object-center"
+          className="w-full h-full transition-all object-cover object-left sm:object-center"
           src={slide.src}
           alt="Slider-background"
         />
-        <div className="absolute flex flex-col justify-between top-0 w-full h-full shadow-y-sm p-8">
-          <div className="flex space-x-3 space-x-reverse items-center text-slate-200">
-            <p className="bg-black/30 py-2 px-4 rounded-full">10px / قسمت ها</p>
-            <ul className="flex space-x-reverse -space-x-2 items-center">
+        <div className="absolute flex flex-col justify-between top-0 w-full h-full bg-black/30 md:bg-transparent md:shadow-y-sm sm:p-8 p-6">
+          <div className="grid gap-4 sm:gap-0 sm:flex sm:space-x-3 space-x-reverse justify-center sm:justify-start items-center text-slate-200">
+            <p className="bg-black/30 py-2 px-4 rounded-full mx-auto sm:mx-3">10px / قسمت ها</p>
+            <ul className="flex space-x-reverse -space-x-2 justify-center sm:justify-start items-center">
               <li>
                 <img className="avatar w-8" src={avatar1} alt="avatar" />
               </li>
@@ -66,10 +66,10 @@ const Slider = () => {
                 <img className="avatar w-8" src={avatar3} alt="avatar" />
               </li>
             </ul>
-            <p>+5 نفر از دوستان شما درحال تماشا هستن</p>
+            <p className="truncate">+5 نفر از دوستان شما درحال تماشا هستن</p>
           </div>
-          <div className="flex justify-between text-slate-100">
-            <div className="flex flex-col space-y-reverse space-y-5">
+          <div className=" grid gap-4 justify-center md:flex md:justify-between text-slate-100">
+            <div className="flex items-center md:items-start flex-col space-y-reverse space-y-4">
               <h1>{slide.title}</h1>
               <p>متن آزمایشی و بی معنی</p>
               <div className="flex items-center space-x-reverse space-x-4">
@@ -85,7 +85,7 @@ const Slider = () => {
               <img
                 id="poster1"
                 onClick={slideHandler}
-                className={`w-28 aspect-video rounded-xl cursor-pointer ${
+                className={`sm:w-28 w-24 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster1" && "shadow-selected-md"
                 }`}
                 src={poster3}
@@ -94,16 +94,16 @@ const Slider = () => {
               <img
                 id="poster2"
                 onClick={slideHandler}
-                className={`w-28 aspect-video rounded-xl cursor-pointer ${
+                className={`sm:w-28 w-24 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster2" && "shadow-selected-md"
                 }`}
-                src={poster2}
+                src={poster4}
                 alt="poster2"
               />
               <img
                 id="poster3"
                 onClick={slideHandler}
-                className={`w-28 aspect-video rounded-xl cursor-pointer ${
+                className={`sm:w-28 w-24 aspect-video rounded-xl cursor-pointer ${
                   imageSelected === "poster3" && "shadow-selected-md"
                 }`}
                 src={slider1}
