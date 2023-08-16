@@ -3,15 +3,23 @@ import React from "react";
 //Images
 import avatar from "../assets/images/avatar-12.jpg";
 
+//Components
+import DarkToggle from "./DarkToggle";
+
 const Header = (props) => {
   const clickHandler = () => {
     props.func();
   };
 
+  const $ = document.getElementsByTagName("html")[0];
+  const toggleHandler = () => {
+    $.classList.toggle("dark");
+  };
+
   return (
     <header
       id="header"
-      className="px-content xlg:mx-8 mx-4 flex items-center justify-between sticky top-0 z-40 bg-primary-bg py-5"
+      className="px-content xlg:mx-8 mx-4 flex items-center justify-between sticky top-0 z-40 bg-primary-bg dark:bg-primary-darker py-5"
     >
       <div className="flex items-center grow space-x-reverse space-x-4">
         <button onClick={clickHandler} className="xlg:hidden">
@@ -25,15 +33,16 @@ const Header = (props) => {
             <i className="fi fi-rr-angle-left text-lg"></i>
           </a>
         </div>
-        <div className="border border-primary-gray rounded-full flex items-center w-10 h-10 sm:w-full sm:max-w-sm overflow-hidden px-3">
-          <i className="fi fi-rr-search text-primary-gray text-base"></i>
+        <div className="border border-primary-gray dark:border-gray-500 rounded-full flex items-center w-10 h-10 sm:w-full sm:max-w-sm overflow-hidden px-3">
+          <i className="fi fi-rr-search text-primary-gray dark:text-gray-500 text-base"></i>
           <input
             className="px-4 py-3 grow"
             type="text"
             placeholder="جست و جو..."
           />
-          <i className="fi fi-rr-microphone text-base text-primary-gray"></i>
+          <i className="fi fi-rr-microphone text-base text-primary-gray dark:text-gray-500"></i>
         </div>
+        <DarkToggle func={() => toggleHandler} />
       </div>
       <div className="flex items-center space-x-reverse space-x-3">
         <div className="flex items-center space-x-3 space-x-reverse">

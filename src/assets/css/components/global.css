@@ -1,26 +1,26 @@
 @layer components {
-    .active-link {
-        @apply relative after:absolute after:inset-y-0 after:w-1.5 after:bg-primary-red after:rounded-full after:-right-8;
-    }
-    .active-link i {
-        @apply text-primary-red
-    }
-    .active-link span {
-        @apply text-slate-700
-    }
-    .avatar {
-        @apply w-12 shadow-md rounded-full
-    }
-    .user-status {
-        @apply before:w-3 before:absolute before:rounded-full before:top-0 before:left-0 before:h-3 before:border-2 before:border-white;
-    }
-    .status-offline {
-        @apply before:bg-primary-gray;
-    }
-    .status-online {
-        @apply before:bg-green-600;
-    }
-    .shadow-selected-md {
-        @apply shadow-md shadow-white/40;
-    }
+  .active-link {
+    @apply relative after:absolute after:inset-y-0 after:w-1.5 after:bg-primary-red after:rounded-full after:-right-8;
+  }
+  .active-link i {
+    @apply text-primary-red;
+  }
+  .active-link span {
+    @apply text-slate-700 dark:text-slate-100;
+  }
+  .avatar {
+    @apply w-12 shadow-md rounded-full;
+  }
+  .user-status {
+    @apply before:w-3 before:absolute before:rounded-full before:top-0 before:left-0 before:h-3 before:border-2 before:border-white;
+  }
+  .status-offline {
+    @apply before:bg-primary-gray;
+  }
+  .status-online {
+    @apply before:bg-green-600;
+  }
+  .shadow-selected-md {
+    @apply shadow-md shadow-white/40;
+  }
 }

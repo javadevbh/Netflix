@@ -18,7 +18,7 @@ const Boxes = () => {
     <>
       <section className="grid w-full">
         <div>
-          <h2 className="text-slate-700">گروه ها</h2>
+          <h2 className="text-slate-700 dark:text-slate-100">گروه ها</h2>
         </div>
         <div className="box-deck">
           <div className="grid gap-6 box border-primary-gray/10 p-6 bg-opacity-20 hover:bg-opacity-100 hover:scale-105 transition-all cursor-pointer">
@@ -41,8 +41,12 @@ const Boxes = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg mb-0 text-slate-700">گروه شماره 1</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                گروه شماره 1
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="grid gap-6 box border-primary-gray/10 p-6 bg-opacity-20 hover:bg-opacity-100 hover:scale-105 transition-all cursor-pointer">
@@ -65,8 +69,12 @@ const Boxes = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg mb-0 text-slate-700">گروه شماره 1</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                گروه شماره 1
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="grid gap-6 box border-primary-gray/10 p-6 bg-opacity-20 hover:bg-opacity-100 hover:scale-105 transition-all cursor-pointer">
@@ -89,8 +97,12 @@ const Boxes = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg mb-0 text-slate-700">گروه شماره 1</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                گروه شماره 1
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="grid gap-6 box border-primary-gray/10 p-6 bg-opacity-20 hover:bg-opacity-100 hover:scale-105 transition-all cursor-pointer">
@@ -113,67 +125,105 @@ const Boxes = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg mb-0 text-slate-700">گروه شماره 1</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                گروه شماره 1
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
         </div>
       </section>
       <section className="grid w-full">
         <div>
-          <h2 className="text-slate-700">به تماشا ادامه دهید</h2>
+          <h2 className="text-slate-700 dark:text-slate-100">
+            به تماشا ادامه دهید
+          </h2>
         </div>
         <div className="box-deck">
           <div className="box overflow-hidden">
             <div className="relative overflow-hidden">
-              <img className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110" src={poster3} alt="poster" />
+              <img
+                className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110"
+                src={poster3}
+                alt="poster"
+              />
               <span className="absolute top-4 right-4 btn bg-white/5 backdrop-blur text-slate-50 px-3 py-1 text-sm">
                 10px
               </span>
               <span className="absolute bottom-0 left-0 w-1/3 h-1 bg-primary-red"></span>
             </div>
             <div className="p-6">
-              <h3 className="text-lg mb-0 text-slate-700">چیز های عجیب</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                چیز های عجیب
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="box overflow-hidden">
             <div className="relative overflow-hidden">
-              <img className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110" src={poster2} alt="poster" />
+              <img
+                className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110"
+                src={poster2}
+                alt="poster"
+              />
               <span className="absolute top-4 right-4 btn bg-white/5 backdrop-blur text-slate-50 px-3 py-1 text-sm">
                 10px
               </span>
               <span className="absolute bottom-0 left-0 w-3/4 h-1 bg-primary-red"></span>
             </div>
             <div className="p-6">
-              <h3 className="text-lg mb-0 text-slate-700">کارآگاهان حقیقی</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                کارآگاهان حقیقی
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="box overflow-hidden">
             <div className="relative overflow-hidden">
-              <img className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110" src={poster1} alt="poster" />
+              <img
+                className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110"
+                src={poster1}
+                alt="poster"
+              />
               <span className="absolute top-4 right-4 btn bg-white/5 backdrop-blur text-slate-50 px-3 py-1 text-sm">
                 10px
               </span>
               <span className="absolute bottom-0 left-0 w-1/5 h-1 bg-primary-red"></span>
             </div>
             <div className="p-6">
-              <h3 className="text-lg mb-0 text-slate-700">دارک</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                دارک
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
           <div className="box overflow-hidden">
             <div className="relative overflow-hidden">
-              <img className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110" src={poster4} alt="poster" />
+              <img
+                className="object-cover aspect-video cursor-pointer transition-all duration-300 hover:scale-110"
+                src={poster4}
+                alt="poster"
+              />
               <span className="absolute top-4 right-4 btn bg-white/5 backdrop-blur text-slate-50 px-3 py-1 text-sm">
                 10px
               </span>
               <span className="absolute bottom-0 left-0 w-2/4 h-1 bg-primary-red"></span>
             </div>
             <div className="p-6">
-              <h3 className="text-lg mb-0 text-slate-700">میان ستاره ای</h3>
-              <p className="text-primary-gray text-sm">متن آزمایشی و بی معنی</p>
+              <h3 className="text-lg mb-0 text-slate-700 dark:text-slate-100">
+                میان ستاره ای
+              </h3>
+              <p className="text-primary-gray dark:text-gray-500 text-sm">
+                متن آزمایشی و بی معنی
+              </p>
             </div>
           </div>
         </div>

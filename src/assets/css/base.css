@@ -1,6 +1,9 @@
 @layer base {
   html {
-    @apply font-persian text-sm bg-primary-lighter font-normal text-slate-800 text-right;
+    @apply text-sm;
+  }
+  body {
+    @apply font-persian bg-primary-lighter dark:bg-primary-darker font-normal text-slate-800 dark:text-gray-100 text-right;
   }
   h1,
   h2,
@@ -29,15 +32,18 @@
     @apply text-lg;
   }
   a {
-    @apply text-primary-gray hover:text-primary-red transition-colors duration-200;
+    @apply text-primary-gray dark:text-gray-500 hover:text-primary-red dark:hover:text-slate-100 transition-colors duration-200;
   }
 
   i {
-   @apply flex justify-center items-center text-[1.35rem];
+    @apply flex justify-center items-center text-[1.35rem];
   }
 
-  input , select , textarea {
-    @apply outline-none bg-transparent
+  input,
+  select,
+  textarea {
+    @apply outline-none bg-transparent;
   }
-
 }
+
+/* font-persian text-sm bg-primary-lighter dark:bg-primary-darker font-normal text-slate-800 dark:text-gray-100 text-right; */

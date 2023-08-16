@@ -1,9 +1,9 @@
 @layer components {
-    .box {
-        @apply rounded-3xl border shadow-lg bg-white w-full max-w-md mx-auto;
-    }
+  .box {
+    @apply rounded-3xl border dark:border-none shadow-lg bg-white dark:bg-primary-dark w-full max-w-md mx-auto;
+  }
 
-    .box-deck {
-        @apply grid gap-6 lg:grid-cols-4 sm:grid-cols-2;
-    }
+  .box-deck {
+    @apply grid gap-6 lg:grid-cols-4 sm:grid-cols-2;
+  }
 }

@@ -1,15 +1,16 @@
 import React from "react";
 
 const RightSidebar = (props) => {
-
-    const clickHandler = () => {
-      props.func();
-    }
+  const clickHandler = () => {
+    props.func();
+  };
 
   return (
     <div
       id="rightSidebar"
-      className={`fixed z-50 ${props.status === true ? "translate-x-0" : "translate-x-full" }  xlg:translate-x-0 transition-all duration-200 bg-white xlg:bg-transparent right-0 top-0 h-screen w-full xl:max-w-xxs max-w-xxs xlg:max-w-2xxs border-l-2 border-primary-light p-8 flex flex-col justify-between `}
+      className={`fixed z-50 ${
+        props.status === true ? "translate-x-0" : "translate-x-full"
+      }  xlg:translate-x-0 transition-all duration-200 bg-white dark:bg-primary-darker xlg:bg-transparent right-0 top-0 h-screen w-full xl:max-w-xxs max-w-xxs xlg:max-w-2xxs border-l-2 border-primary-light dark:border-slate-100/5 p-8 flex flex-col justify-between `}
     >
       <div>
         <div className="flex items-start justify-between">
@@ -22,7 +23,9 @@ const RightSidebar = (props) => {
         </div>
         <nav className="grid 2xl:gap-8 gap-6 2xl:mt-8 mt-4 ">
           <div className="grid gap-4 2xl:gap-6">
-            <h6 className="text-primary-gray text-sm mb-0">منو</h6>
+            <h6 className="text-primary-gray dark:text-gray-700 text-sm mb-0">
+              منو
+            </h6>
             <ul className="grid gap-4 2xl:gap-6">
               <li className="flex active-link">
                 <a className="flex py-1.5" href="#">
@@ -45,7 +48,9 @@ const RightSidebar = (props) => {
             </ul>
           </div>
           <div className="grid gap-4 2xl:gap-6">
-            <h6 className="text-primary-gray text-sm mb-0">اجتماعی</h6>
+            <h6 className="text-primary-gray dark:text-gray-700 text-sm mb-0">
+              اجتماعی
+            </h6>
             <ul className="grid gap-4 2xl:gap-6">
               <li>
                 <a className="flex" href="#">
@@ -62,7 +67,9 @@ const RightSidebar = (props) => {
             </ul>
           </div>
           <div className="grid gap-4 2xl:gap-6">
-            <h6 className="text-primary-gray text-sm mb-0">عمومی</h6>
+            <h6 className="text-primary-gray dark:text-gray-700 text-sm mb-0">
+              عمومی
+            </h6>
             <ul className="grid gap-4 2xl:gap-6">
               <li>
                 <a className="flex" href="#">
@@ -80,10 +87,12 @@ const RightSidebar = (props) => {
           </div>
         </nav>
       </div>
-      <div className="w-full bg-primary-gray/25 text-center 2xl:p-6 p-4 rounded-xl">
+      <div className="w-full bg-primary-gray/25 dark:bg-primary-darkness text-center 2xl:p-6 p-4 rounded-xl">
         <h6 className="text-base mb-1.5">لورم اپیسوم</h6>
-        <p className="text-xs text-primary-gray mb-4">متن آزمایشی و بی معنی</p>
-        <button className="2xl:btn 2xl:text-base btn-sm btn-gray">
+        <p className="text-xs text-primary-gray dark:text-gray-500 mb-4">
+          متن آزمایشی و بی معنی
+        </p>
+        <button className="2xl:btn 2xl:text-base btn-sm btn-gray dark:btn-dark">
           مشاهده چالش ها
         </button>
       </div>
